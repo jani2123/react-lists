@@ -1,0 +1,73 @@
+.tailed-arrow {
+    position: relative;
+    width: 107px;
+    height: 46px;
+    margin: 10px;
+}
+
+.flipped {
+    transform: rotate(180deg);
+}
+  
+.arrow-head {
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 0 20px 50px;
+    border-color: transparent transparent transparent #eee;
+}
+
+.arrow-tail {
+    position: absolute;
+    left: 2px;
+    top: 13px;
+    width: 50px;
+    height: 20px;
+    background-color: #eee;
+}
+
+.arrow-head-outline {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 23px 0 23px 57px;
+    border-color: transparent transparent transparent #555;
+}
+
+.arrow-tail-outline {
+    position: absolute;
+    top: 11px;
+    width: 50px;
+    height: 24px;
+    background-color: #555;
+}
+
+.tailed-arrow.enabled .arrow-head {
+    border-color: transparent transparent transparent #efe;
+}
+
+.tailed-arrow.enabled .arrow-tail {
+    background-color: #efe;
+}
+
+.tailed-arrow.enabled .arrow-head-outline {
+    border-color: transparent transparent transparent #0c0;
+}
+
+.tailed-arrow.enabled .arrow-tail-outline {
+    background-color: #0c0;
+}
+
+/* .tailed-arrow:hover {
+    cursor: not-allowed;
+} */
+
+.tailed-arrow.enabled:hover {
+    cursor: pointer;
+}

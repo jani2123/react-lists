@@ -1,0 +1,13 @@
+.App {
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
+  gap: 20px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+}
